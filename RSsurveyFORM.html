@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles9.css" />
+  </head>
+  <body>
+    <h1 id=
+    "title">Survey Form</h1>
+    <p id="description">For Sponsorships, we need your details .<br/>Please fill out this form with the required information.</p>
+    <form id="survey-form" method="post" action='https://sponzy.in/'>
+      <fieldset>
+        <label id="name-label" for="name">Enter Your Name: 
+          <input 
+                      class="form-control"
+            placeholder="Enter your name" 
+          id="name" 
+          name="name" 
+          type="text" 
+          required />
+          </label>
+      <label id="email-label" for="email">
+        Enter Your Email: 
+        <input 
+        placeholder="sample@xmail.com" id="email" 
+        name="email" 
+        type="email" 
+        class="form-control"
+        required /></label>
+        <label id="number-label"  for="number">
+          Enter Age (optional): 
+          <input  class="form-control"
+          placeholder="18+" 
+          id="number" 
+          name="age" type="number" min="18"  max="120" /></label>
+             <label for="sponzy">Did you try getting a sponsor earlier?
+          <select id="dropdown" name="sponzy">
+            <option value="">(select one)</option>
+            <option value="21">Yes</option>
+            <option value="22">No</option>
+            
+          </select>
+        </label>
+      </fieldset><fieldset>
+        <legend>In what domain do you want sponsorship?</legend>
+        <label for="fests"><input id="fests" type="radio" value="12" name="fests" class="inline" checked /> Festivals/Carnivals</label>
+        <label for="projects"><input id="projects" type="radio" value="13" name="fests" class="inline" /> Projects</label>
+          <label for="business"><input id="business" type="radio" value="14" name="fests" class="inline" /> Business/Personal</label>
+            <label for="exh"><input id="exh" type="radio" value="15" name="fests" class="inline" /> Exhibitions</label>
+      </fieldset>
+      <fieldset>
+          <label for="referrer">How did you hear about sponzy.in?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">LinkedIn</option>
+            <option value="2">Instagram</option>
+            <option value="3">Facebook</option>
+            <option value="4">Mouth Publicity</option>
+              <option value="5">Ads</option>
+               <option value="6">Others</option>
+          </select>
+        </label>
+         
+         
+ <fieldset>     <legend> What sponsor you want ?</legend>
+      <label for="tit"><input id="tit" type="checkbox" value="7" name="tit" class="inline" checked /> Title</label>
+        <label for="gold"><input id="gold" type="checkbox" value="8" name="gold" class="inline" checked /> Gold</label>
+          <label for="silver"><input id="silver" type="checkbox" value="9" name="silver" class="inline" checked /> Silver</label>
+            <label for="local"><input id="local" type="checkbox" value="10" name="local" class="inline" checked /> Local</label>
+      </fieldset>
+    
+        <label for="bio">Any comments or suggestions?
+          <textarea id="bio" name="bio" rows="5" cols="50" placeholder="I like the response time of sponzy..."></textarea>
+        </label>
+      </fieldset>
+      
+      
+      <button type="submit" value="Submit" id="submit">Submit</button>
+    </form>
+  </body>
+  <footer>
+    <address>
+      <a href="https://sponzy.in">sponzy.in</a><br />
+      Jaipur<br />
+      Rajasthan<br />
+      India
+    </address>
+    <p>Made by Raghuraj Somani</p>
+  </footer>
+</html>
